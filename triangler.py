@@ -19,6 +19,7 @@ class TrianglerTester(unittest.TestCase):
 
     def testRightSided(self):
         self.assertIn("RIGHT", classifyTriangle(3,4,5))
+        self.assertIn("RIGHT", classifyTriangle(3,5,3))
         self.assertNotIn("RIGHT", classifyTriangle(3,5,5))
 
     def testIsosceles(self):
